@@ -1,0 +1,203 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #5c93b1;
+color: black;
+}
+
+header {
+background-color: #5c93b1;
+padding: 10px;
+text-align: center;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+width: 200px;
+margin-left: 10%;
+}
+
+.logo img {
+width: 100%;
+}
+
+nav {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin: 25px 10%;
+
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 10px;
+margin: 0 10px;
+font-size: 12px;
+font-weight: 600;
+}
+
+nav #menuBtn {
+border: none;
+color: white;
+cursor: pointer;
+font-weight: 800;
+font-size: 30px;
+}
+
+#mobileMenuBtn {
+display: none;
+cursor: pointer;
+color: white;
+font-size: 30px;
+}
+
+section {
+margin-top: 60px;
+padding: 20px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+h1,
+p {
+color: rgba(233, 238, 239, 255);
+}
+
+h1 {
+font-weight: 300;
+font-size: 30px;
+}
+
+p {
+width: 23%;
+}
+
+.button-pop {
+padding: 10px 20px;
+background-color: white;
+color: #727775;
+border: none;
+cursor: pointer;
+margin-top: 20px;
+border-radius: 25px;
+font-size: 7px;
+width: 109px;
+font-weight: bold;
+height: 35px;
+}
+
+.description {
+opacity: 0.6;
+}
+
+.popup {
+position: fixed;
+top: auto;
+left: auto;
+width: 36vw;
+height: 44vh;
+background: rgba(0, 0, 0, 0.7);
+z-index: 1;
+display: none;
+}
+
+.popup .container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 80%;
+max-width: 450px;
+height: auto;
+z-index: 2;
+text-align: center;
+}
+
+.popup .container p {
+width: 100%;
+font-size: 18px;
+}
+
+.popup .close-btn {
+position: absolute;
+right: 20px;
+top: 20px;
+width: 30px;
+background-color: red;
+color: white;
+font-size: 25px;
+font-weight: 600;
+text-align: center;
+border-radius: 50px;
+justify-content: center;
+display: flex;
+}
+
+@media screen and (max-width: 883px) {
+
+header {
+margin: 25px auto;
+}
+
+nav {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 60px;
+right: 0;
+background-color: #5c93b1;
+padding: 10px;
+width: 26%;
+border: 1px solid white;
+
+}
+
+nav.show {
+
+display: flex;
+transform: translateX(20%);
+}
+
+nav a {
+margin: 10px 0;
+
+}
+
+nav a:hover {
+
+border-bottom: 3px solid white;
+border-width: 2px;
+}
+
+#mobileMenuBtn {
+display: block;
+margin-top: -9px;
+margin-right: 10%;
+}
+
+.popup {
+width: 80vw;
+height: 80vh;
+}
+
+.popup .container {
+width: 80%;
+max-width: 100%;
+}
+
+.popup .container p {
+font-size: 16px;
+}
+
+#mobileMenuBtn .CloseButton{
+display: none;
+}
+}
