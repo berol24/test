@@ -209,9 +209,6 @@ display: none;
 
 
 @media screen and (max-width: 600px) {
-    body{
-        background-color: red;
-    }
     .popup {
         width: 64vw;
         height: 25vh;
