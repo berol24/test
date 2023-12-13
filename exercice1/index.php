@@ -10,7 +10,7 @@ $messyArray = [
     ]
 ];
 
-echo $messyArray[7] . "<br>";
+echo $messyArray[0] . "<br>";
 echo $messyArray[8]["Cerise"]. "<br>";
 unset($messyArray[8][0]) ;
 print_r($messyArray). "<br>";
